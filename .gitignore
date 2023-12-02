@@ -4,17 +4,7 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-.idea/checkstyle-idea.xml
-.idea/encodings.xml
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/misc.xml
-.idea/vsc.xml
-.idea/aws.xml
-.idea/workspace.xml
-.idea/libraries/
-.idea/sonarlint/
+.idea
 *.iws
 *.iml
 *.ipr

@@ -20,7 +20,7 @@ internal class Day01Test {
     }
 
     @Test
-    fun part2partOnTestData() {
+    fun part2OnTestData() {
         val inputTxt = File("src/test/resources/input/day01/day01_test_part2.txt")
         val input = BufferedReader(FileReader(inputTxt)).readLines()
         val day01 = Day01()
@@ -30,22 +30,22 @@ internal class Day01Test {
     }
 
     @Test
-    fun part1OnRealData() {
+    fun part1() {
         val inputTxt = File("src/test/resources/input/day01/day01.txt")
         val input = BufferedReader(FileReader(inputTxt)).readLines()
         val day01 = Day01()
 
         val value = day01.part1(input)
-        assertEquals(55816, value)
+        assertEquals(56397, value)
     }
 
     @Test
-    fun part2OnRealData() {
+    fun part2() {
         val inputTxt = File("src/test/resources/input/day01/day01.txt")
         val input = BufferedReader(FileReader(inputTxt)).readLines()
         val day01 = Day01()
 
         val value = day01.part2(input)
-        assertEquals(54980, value)
+        assertEquals(55701, value)
     }
 }
