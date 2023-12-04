@@ -22,16 +22,15 @@ class Day04 {
     }
 
     fun part2(input: List<String>): Int {
-        val map: HashMap<Int, Int> = HashMap()
+        val cardsTaken = IntArray(input.size) { 1 }
         parseInput(input).withIndex().forEach { (index, entry) ->
             val matches = entry.second.intersect(entry.first).size
-            map[index] = (map[index] ?: 0) + 1
-            for (t in 1..map.getValue(index)) {
+            for (t in 1..cardsTaken[index]) {
                 for (i in 1..matches) {
-                    map[index + i] = (map[index + i] ?: 0) + 1
+                    cardsTaken[index + i] = cardsTaken[index + i] + 1
                 }
             }
         }
-        return map.values.sum()
+        return cardsTaken.sum()
     }
 }
