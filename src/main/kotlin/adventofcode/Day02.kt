@@ -14,7 +14,7 @@ class Day02 {
 
     fun part2(input: List<String>): Int {
         return findMaxCubes(input)
-            .sumOf { it.values.reduce() { acc, next -> acc * next } }
+            .sumOf { it.values.reduce { acc, next -> acc * next } }
     }
 
     private fun findMaxCubes(input: List<String>): List<Map<String, Int>> {
