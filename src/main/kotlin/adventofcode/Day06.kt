@@ -17,8 +17,8 @@ class Day06 {
     }
 
     fun part2(input: List<String>): Int {
-        val time = input[0].substringAfter(": ").trim().filter { it.isDigit() }
-        val distance = input[1].substringAfter(": ").trim().trim().filter { it.isDigit() }
-        return iterate(time.toLong(), distance.toLong())
+        val time = input[0].substringAfter(": ").trim().filter { it.isDigit() }.toLong()
+        val distance = input[1].substringAfter(": ").trim().trim().filter { it.isDigit() }.toLong()
+        return iterate(time, distance)
     }
 }
