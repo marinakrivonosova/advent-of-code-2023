@@ -43,4 +43,22 @@ internal class Day09Test {
         val result = day09.part2(input)
         assertEquals(2, result)
     }
+
+    @Test
+    fun part2NoReverse() {
+        val inputTxt = File("src/test/resources/input/day09/day09.txt")
+        val input = BufferedReader(FileReader(inputTxt)).readLines()
+        val day09 = Day09()
+        val result = day09.part2NoReverse(input)
+        assertEquals(1041, result)
+    }
+
+    @Test
+    fun part2OnTestDataNoReverse() {
+        val inputTxt = File("src/test/resources/input/day09/day09_test.txt")
+        val input = BufferedReader(FileReader(inputTxt)).readLines()
+        val day09 = Day09()
+        val result = day09.part2NoReverse(input)
+        assertEquals(2, result)
+    }
 }
